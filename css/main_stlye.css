@@ -1,0 +1,1063 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 1320px;
+	font-family: 'TmoneyRoundWind';
+	font-size: 14px;
+	color: #505050;
+	line-height: 24px;
+	background-color: #fff;
+	cursor: url(../images/cursor.png), auto;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: #505050;
+	text-decoration: none;
+	cursor: url(../images/cursor_h.png), auto;
+}
+
+body::-webkit-scrollbar {
+	/*스크롤바 전체*/
+	width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+	/*스크롤바 막대*/
+	background-color: #53beb9;
+	border-radius: 10px;
+	background-clip: padding-box;
+	border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-track {
+	/*스크롤바 막대 외부*/
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+}
+
+/* -------------------- 서치 */
+input {
+	background: #fff url(../images/search.png) no-repeat 95% center;
+	border-radius: 50px;
+	box-sizing: border-box;
+	display: block;
+	padding: 5px 15px;
+	width: 28px;
+	height: 28px;
+	border: none;
+	transition: all .5s;
+	border: #fff 1px solid;
+}
+
+.search {
+	border: #00A69D 1px solid;
+	width: 140px;
+	background-color: #e0f8f7
+}
+
+input:focus {
+	height: auto;
+	outline: none;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+	display: none;
+}
+
+/* -------------------- 탑,바텀 버튼 */
+.top_btn {
+	position: fixed;
+	right: 50px;
+	bottom: 100px;
+	display: none;
+	z-index: 99;
+}
+
+.bottom_btn {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	display: none;
+	z-index: 99;
+}
+
+/* -------------------- 커서 */
+html {
+	cursor: url(../images/cursor1.png), auto
+}
+
+/* -------------------- header */
+header {
+	width: 1320px;
+	margin: 5px auto;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+}
+
+header ul {
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	align-items: center;
+}
+
+header ul li {
+	margin-left: 10px;
+}
+
+
+header a {
+	color: #00A69D;
+}
+
+header ul a:hover {
+	color: #65c5c0;
+	text-decoration: underline;
+}
+
+header img {
+	display: block;
+}
+
+header img:hover {
+	opacity: 0.6;
+}
+
+/* -------------------- sub */
+#sub {
+	background-color: #53beb9;
+}
+
+#sub.scroll-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+}
+
+.gnb {
+	max-width: 1320px;
+	margin: auto;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.gnb ul {
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 80%;
+}
+
+.gnb ul li {
+	margin-left: 15%;
+}
+
+.gnb ul a {
+	color: #fff;
+	display: inline-block;
+	font-size: 18px;
+	position: relative;
+}
+
+.gnb img {
+	display: block;
+	text-align: left;
+}
+
+.solid {
+	position: absolute;
+	width: 100%;
+	margin: 5px auto 0;
+	height: 5px;
+	background: #fff;
+	opacity: 0;
+	transform: scaleX(0);
+	transition-property: opacity, transform;
+	transition-duration: 0.5s;
+}
+
+.gnb li a:hover .solid {
+	transform: scaleX(1);
+	opacity: 1;
+}
+
+/* --------------------슬라이드 배너 */
+/* 슬라이드 꾸미기 */
+.slide {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.slide .swiper-slide a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.slide .swiper-slide img {
+	display: block;
+	width: 100%;
+}
+
+
+/* 이동버튼 이미지로 바꾸기*/
+.slide .swiper-button-prev {
+	left: 0;
+}
+
+.slide .swiper-button-next {
+	right: 0;
+}
+
+.slide .swiper-button-prev,
+.slide .swiper-button-next {
+	width: 50px;
+	height: 50px;
+}
+
+.slide .swiper-button-prev:after,
+.slide .swiper-button-next:after {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+
+.slide .swiper-button-prev:after {
+	background: url(../images/left.png);
+}
+
+.slide .swiper-button-next:after {
+	background: url(../images/right.png);
+}
+
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.slide .swiper-pagination-bullet {
+	background: #00a69d;
+	width: 10px;
+	height: 10px;
+	opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.slide .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.slide .swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 0px;
+	padding-bottom: 10px
+}
+
+/* -------------------- banner */
+#banner {
+	width: 100%;
+	display: block;
+	height: 820px;
+}
+
+
+/* -------------------- con1 */
+#con1 {
+	width: 1320px;
+	margin: 120px auto 100px;
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+}
+
+h1 {
+	font-size: 25px;
+	line-height: 40px;
+	color: #00a69d;
+	padding-bottom: 10px;
+}
+
+#con1 p {
+	padding-top: 20px;
+}
+
+#con1 span {
+	color: #00a69d;
+	border-bottom: 1px solid #00a69d;
+}
+
+#con1 .color {
+	padding: 50px 0 20px;
+}
+
+#con1 .btn a {
+	background: #56B6B1 url(../images/btn.png) 85% 50% no-repeat;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 12px 50px 12px 20px;
+}
+
+#con1 .btn img {
+	padding-left: 10px;
+}
+
+#con1 .btn:hover a {
+	background-color: #00A69D;
+}
+
+.text {
+	width: calc(1320px - 900px);
+	font-size: 14px;
+	padding: 70px 0 0 50px;
+}
+
+#con1 .img {
+	width: 800px;
+}
+
+
+#con1 .btn a {
+	color: #fff;
+}
+
+/* -------------------- con2 */
+#con2 {
+	background-color: #fffce8;
+}
+
+.con2_in ul {
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+}
+
+#con2 .can1,
+.can2 {
+	display: block;
+}
+
+#con2 h2 {
+	font-size: 16px;
+	font-weight: 400;
+	color: #56B6B1;
+}
+
+#con2 h3 {
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+
+.con2_in {
+	text-align: center;
+	margin: auto;
+	width: 1000px;
+	padding: 70px 0;
+}
+
+.con2_in p {
+	padding-bottom: 5px;
+}
+
+.con2_in .a {
+	color: #bbb;
+	text-decoration: line-through;
+}
+
+.con2_in .b {
+	font-weight: bold;
+}
+
+.con2_in .c {
+	color: #00A69D;
+	font-weight: bold;
+}
+
+.con2_in .icon {
+	padding-top: 10px;
+	margin: 5px;
+}
+
+.con2_in .icon:hover {
+	filter: opacity(0.6);
+}
+
+.can1, .can2 {
+	background: url(../images/i_bg.png)no-repeat;
+}
+
+.can1,
+.can2 {
+	display: block;
+	overflow: hidden;
+	border-radius: 50px 0 50px 0;
+	margin-top: 50px;
+}
+
+.can1 img,
+.can2 img {
+	display: block;
+	/* 이미지 아래쪽 여백 없애기 */
+	transition: all .5s;
+}
+
+.can li :hover img {
+	transform: scale(1.1, 1.1);
+}
+
+h3 {
+	padding-top: 30px;
+}
+
+
+/* -------------------- con3 갤러리 */
+#con3 {
+	margin: 100px auto;
+	width: 1320px;
+}
+
+#con3 ul li {
+	text-align: center;
+}
+
+#con3 h3 {
+	padding-top: 20px;
+}
+
+#con3 p {
+	padding: 5px;
+}
+
+#con3 ul span {
+	padding-top: 10px;
+	font-weight: bold;
+}
+
+#con3 h2 {
+	padding-top: 0;
+}
+
+#con3 h1,
+h4 {
+	width: 1320px;
+	margin: auto;
+}
+
+#con3 h4 {
+	font-weight: 300;
+}
+
+.shop1{
+	display: block;
+	overflow: hidden;
+	background: url(../images/i_con3_bg.png) no-repeat;
+}
+
+
+
+
+.shop1 img {
+	display: block;
+	transition: all .5s;
+}
+
+.shop1:hover img {
+	transform: scale(1.1, 1.1);
+}
+
+
+/* 갤러리 꾸미기 */
+.gallery {
+	width: 1320px;
+	margin: 40px auto;
+	padding: 0 10px 40px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.gallery_inner {
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .swiper-slide img {
+	display: block;
+	width: 100%;
+}
+
+.gallery .swiper-slide .icon {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+}
+
+.gallery .swiper-slide .icon:hover {
+	filter: opacity(0.6);
+}
+
+.gallery .swiper-button-prev,
+.gallery .swiper-button-next {
+	top: 200px;
+}
+
+
+
+/* 이동버튼 이미지로 바꾸기 */
+.gallery .swiper-button-prev,
+.gallery .swiper-button-next {
+	width: 50px;
+	height: 50px;
+}
+
+.gallery .swiper-button-prev:after,
+.gallery .swiper-button-next:after {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+
+.gallery .swiper-button-prev:after {
+	background: url(../images/left.png);
+}
+
+.gallery .swiper-button-next:after {
+	background: url(../images/right.png);
+}
+
+
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.gallery .swiper-pagination-bullet {
+	background: #00A69D;
+	width: 10px;
+	height: 10px;
+	opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.gallery .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.gallery .swiper-horizontal>.swiper-pagination-bullets,
+.gallery .swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 0px;
+}
+
+/* -------------------- con4 */
+#con4 {
+	width: 1320px;
+	margin: 180px auto 130px;
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.con4_in {
+	padding-top: 30px;
+	padding-left: 50px;
+}
+
+.con4_in h2 {
+	font-size: 25px;
+	font-weight: 300;
+	padding-bottom: 30px;
+}
+
+.con4_in .a {
+	color: #bbb;
+	text-decoration: line-through;
+}
+
+.con4_in .b {
+	font-weight: bold;
+}
+
+.con4_in .c {
+	color: #00A69D;
+	font-weight: bold;
+}
+
+.con4_in .icon {
+	padding-top: 10px;
+	margin: 5px;
+}
+
+.con4_in p {
+	font-size: 17px;
+	padding-bottom: 50px;
+}
+
+.con4_in .whatch {
+	position: absolute;
+	top: -35px;
+	left: 40px;
+	width: 66px;
+	height: 66px;
+}
+
+#con4 .btn a {
+	background: #56B6B1 url(../images/btn.png) 85% 50% no-repeat;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 12px 50px 12px 20px;
+}
+
+#con4 .d-day {
+	padding-bottom: 20px;
+}
+
+#con4 .btn a {
+	color: #fff;
+}
+
+#con4 .btn img {
+	padding-left: 10px;
+}
+
+#con4 .btn:hover a {
+	background-color: #00A69D;
+}
+
+/* -------------------- video */
+#video {
+	width: 1320px;
+	margin: 0 auto 150px;
+}
+
+video{
+	display: block;
+}
+
+/* -------------------- con5 */
+#con5 {
+	background-color: #fffce8;
+}
+#con5 h2{
+	font-family: 'SCoreDream';
+	font-weight: 900;
+}
+.con5_in {
+	width: 1320px;
+	margin: auto;
+	padding: 80px 0 0;
+	text-align: center;
+}
+
+/* 갤러리 꾸미기 */
+.gallery2 {
+	width: 100%;
+	margin: 70px auto 0;
+	padding: 0 50px 0px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.gallery_inner {
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery2 .swiper-slide a {
+	width: 100%;
+	height: 100%;
+}
+
+.gallery2 .swiper-slide img {
+	display: block;
+	width: 100%;
+	margin: auto;
+}
+
+/* 이동버튼 이미지로 바꾸기 */
+.gallery2 .swiper-button-prev {
+	top: 100px;
+	left: 0;
+}
+
+.gallery2 .swiper-button-next {
+	top: 100px;
+	right: 0;
+}
+
+.gallery2 .swiper-button-prev,
+.gallery2 .swiper-button-next {
+	width: 50px;
+	height: 50px;
+}
+
+.gallery2 .swiper-button-prev:after,
+.gallery2 .swiper-button-next:after {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+
+.gallery2 .swiper-button-prev:after {
+	background: url(../images/left.png);
+}
+
+.gallery2 .swiper-button-next:after {
+	background: url(../images/right.png);
+}
+
+
+#con5 img {
+	width: 200px;
+	height: 200px;
+}
+
+#con5 h2 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#con5 p {
+	text-align: center;
+}
+
+@keyframes con5_img {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(50px);
+	}
+}
+
+.con5_img {
+	animation: con5_img 1.5s infinite alternate;
+}
+
+.swiper-slide:nth-child(even) .con5_img {
+	animation: con5_img 1.5s infinite alternate-reverse;
+}
+
+
+@keyframes shadow {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-30px);
+	}
+}
+
+.shadow {
+	animation: shadow 1.5s infinite alternate;
+}
+
+.swiper-slide:nth-child(even) .shadow {
+	animation: shadow 1.5s infinite alternate-reverse;
+}
+
+
+/* -------------------- con6 */
+
+#con6 {
+	width: 1320px;
+	margin: 100px auto;
+	position: relative;
+}
+
+#con6 h1 {
+	text-align: center;
+}
+
+.con6_text {
+	width: 246px;
+	line-height: 22px;
+	border-radius: 0 0 30px 0;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.con6_text .p1 {
+	padding: 15px 0 5px;
+	border-bottom: 1px solid #ccc;
+	color: #aaa;
+}
+
+.con6_text_in {
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 10px;
+}
+
+.con6_text_right {
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 20px;
+}
+
+.con6_text_in p {
+	padding-bottom: 3px;
+}
+
+.con6_text_in .blue {
+	font-weight: 500;
+	color: #00A69D;
+	padding-right: 5px;
+}
+
+.con6_text_in .bold {
+	font-weight: bold;
+	padding-right: 15px;
+}
+
+.con6_img {
+	margin-top: 5px;
+	width: 35px;
+	height: 35px;
+}
+
+
+/* 갤러리 꾸미기 */
+.gallery3 {
+	width: 1320px;
+	margin: 50px auto;
+	padding: 0 50px 40px;
+	box-sizing: border-box;
+	position: relative;
+	padding-left: 10px;
+
+
+}
+
+.gallery3 .gallery_inner {
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+
+.gallery3 .swiper-slide a {
+	width: 100%;
+	height: 100%;
+}
+
+.gallery3 .swiper-slide img a {
+	display: block;
+	width: 100%;
+}
+
+
+/* 블릿버튼 위치 */
+.gallery3 .swiper-horizontal>.swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal {
+	width: 396px;
+	height: 5px;
+	background-color: #bae5e3;
+	top: auto;
+	bottom: 0px;
+	left: 420px;
+}
+
+.gallery3 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+	background-color: #56B6B1;
+	top: 0px;
+	bottom: 0px;
+}
+
+.btn_pause {
+	position: absolute;
+	right: 450px;
+	bottom: -15px;
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	background: url(../images/play.png) no-repeat center;
+}
+
+.btn_pause.on {
+	background-image: url(../images/stop.png);
+}
+
+/* footer top */
+#footer_top {
+	background-color: #D4F3EA;
+}
+
+#footer_top ul {
+	padding: 20px 0;
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+}
+
+#footer_top ul li {
+	color: #ccc;
+}
+
+
+#footer_top ul li a {
+	color: #00A69D;
+	padding: 5px;
+}
+
+#footer_top ul li a:hover {
+	font-weight: bold;
+	color: #00A69D;
+}
+
+
+/* footer */
+footer {
+	background-color: #53beb9;
+	width: 100%;
+	padding: 50px 0;
+
+}
+
+.footer_in {
+	width: 1320px;
+	margin: auto;
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo_text {
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.logo_text img {
+	padding-right: 50px;
+}
+
+.footer_in ul {
+	color: #fff;
+}
+
+.footer_in img {
+	display: block;
+}
+
+.footer_in .title {
+	font-weight: bold;
+	font-size: 16px;
+	padding-bottom: 5px;
+}
+
+.footer_in .title2 {
+	font-weight: bold;
+	font-size: 16px;
+	padding: 30px 0 5px;
+}
+
+.footer_in .last_text {
+	text-align: end;
+}
+
+.footer_in .number {
+	font-weight: bold;
+	font-size: 28px;
+	padding: 5px 0 30px;
+}
+
+.footer_in .icon {
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: end;
+	padding-top: 40px;
+}
+
+.footer_in .icon a {
+	display: block;
+	width: 43px;
+	height: 42px;
+}
+
+.footer_in .icon li:hover img {
+	display: none;
+}
+
+.icon_1:hover a {
+	background-image: url(../images/f2-1.png);
+
+}
+
+.icon_2:hover a {
+	background-image: url(../images/f2-2.png);
+}
+
+.icon_3:hover a {
+	background-image: url(../images/f2-3.png);
+}
+
+.icon_4:hover a {
+	background-image: url(../images/f2-4.png);
+}
