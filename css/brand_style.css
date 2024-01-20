@@ -8,7 +8,7 @@
 body {
 	min-width: 1320px;
 	font-family: 'TmoneyRoundWind';
-	font-size: 14px;
+	font-size: 15px;
 	color: #505050;
 	line-height: 24px;
 	background-color: #fff;
@@ -330,8 +330,10 @@ header img:hover {
 }
 
 .con1_in h1 {
+	line-height: 25px;
 	line-height: 45px;
 	padding-bottom: 30px;
+	font-family: 'SCoreDream';
 }
 
 .con1_in .p1,
@@ -412,6 +414,7 @@ header img:hover {
 	text-align: center;
 	padding-bottom: 5px;
 	line-height: 22px;
+	font-size: 14px;
 }
 
 .con2_in li:hover{
@@ -438,6 +441,7 @@ header img:hover {
 
 #bi h1 {
 	font-size: 22px;
+	font-family: 'SCoreDream';
 }
 
 #bi h2 {
@@ -649,7 +653,10 @@ header img:hover {
 .directions_in .b4 {
 	font-weight: 300;
 	color: #00A69D;
-	padding-left: 41.5px;
+	padding-left: 41.3px;
+}
+.directions_in .c{
+	padding-left: 5px;
 }
 
 .directions_in .guide_icon1 {

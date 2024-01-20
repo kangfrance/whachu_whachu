@@ -8,7 +8,7 @@
 body {
 	min-width: 1320px;
 	font-family: 'TmoneyRoundWind';
-	font-size: 14px;
+	font-size: 15px;
 	color: #505050;
 	line-height: 24px;
 	background-color: #fff;
@@ -309,7 +309,7 @@ header img:hover {
 /* -------------------- con1 */
 #con1 {
 	width: 1320px;
-	margin: 120px auto 100px;
+	margin: 100px auto 100px;
 	display: -moz-box;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -317,11 +317,12 @@ header img:hover {
 	justify-content: space-between;
 }
 
-h1 {
+#con1 h1 {
 	font-size: 25px;
 	line-height: 40px;
 	color: #00a69d;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+	font-family: 'SCoreDream';
 }
 
 #con1 p {
@@ -337,6 +338,16 @@ h1 {
 	padding: 50px 0 20px;
 }
 
+#con1 .text {
+	width: calc(1320px - 900px);
+	font-size: 15px;
+	padding: 100px 0 0 50px;
+}
+
+#con1 .img {
+	width: 780px;
+}
+
 #con1 .btn a {
 	background: #56B6B1 url(../images/btn.png) 85% 50% no-repeat;
 	display: inline-block;
@@ -348,23 +359,12 @@ h1 {
 	padding-left: 10px;
 }
 
-#con1 .btn:hover a {
-	background-color: #00A69D;
-}
-
-.text {
-	width: calc(1320px - 900px);
-	font-size: 14px;
-	padding: 70px 0 0 50px;
-}
-
-#con1 .img {
-	width: 800px;
-}
-
-
 #con1 .btn a {
 	color: #fff;
+}
+
+#con1 .btn:hover a {
+	background-color: #00A69D;
 }
 
 /* -------------------- con2 */
@@ -385,17 +385,24 @@ h1 {
 	display: block;
 }
 
+#con2 h1 {
+	font-size: 25px;
+	line-height: 40px;
+	color: #00a69d;
+	padding: 5px 0 3px;
+	font-family: 'SCoreDream';
+}
+
 #con2 h2 {
 	font-size: 16px;
 	font-weight: 400;
-	color: #56B6B1;
-}
+	color: #505050;
+	font-size: 15px;
+}	
 
 #con2 h3 {
-	font-size: 20px;
-	padding-bottom: 5px;
-}
-
+	padding-bottom: 10px;
+}	
 
 .con2_in {
 	text-align: center;
@@ -411,10 +418,12 @@ h1 {
 .con2_in .a {
 	color: #bbb;
 	text-decoration: line-through;
+	padding-right: 5px;
 }
 
 .con2_in .b {
 	font-weight: bold;
+	padding-right: 5px;
 }
 
 .con2_in .c {
@@ -454,12 +463,12 @@ h1 {
 	transform: scale(1.1, 1.1);
 }
 
-h3 {
+.can h3 {
 	padding-top: 30px;
 }
 
-
 /* -------------------- con3 갤러리 */
+
 #con3 {
 	margin: 100px auto;
 	width: 1320px;
@@ -469,11 +478,19 @@ h3 {
 	text-align: center;
 }
 
+#con3 h1 {
+	font-size: 25px;
+	color: #00a69d;
+	padding-bottom: 12px;
+}
+
 #con3 h3 {
 	padding-top: 20px;
+	font-size: 16px;
 }
 
 #con3 p {
+	font-size: 15px;
 	padding: 5px;
 }
 
@@ -502,9 +519,6 @@ h4 {
 	background: url(../images/i_con3_bg.png) no-repeat;
 }
 
-
-
-
 .shop1 img {
 	display: block;
 	transition: all .5s;
@@ -513,7 +527,6 @@ h4 {
 .shop1:hover img {
 	transform: scale(1.1, 1.1);
 }
-
 
 /* 갤러리 꾸미기 */
 .gallery {
@@ -550,8 +563,6 @@ h4 {
 	top: 200px;
 }
 
-
-
 /* 이동버튼 이미지로 바꾸기 */
 .gallery .swiper-button-prev,
 .gallery .swiper-button-next {
@@ -575,8 +586,6 @@ h4 {
 	background: url(../images/right.png);
 }
 
-
-
 /* 블릿버튼 크기, 색상, 투명도 */
 .gallery .swiper-pagination-bullet {
 	background: #00A69D;
@@ -599,7 +608,7 @@ h4 {
 /* -------------------- con4 */
 #con4 {
 	width: 1320px;
-	margin: 180px auto 130px;
+	margin: 180px auto 180px;
 	display: -moz-box;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -609,18 +618,34 @@ h4 {
 }
 
 .con4_in {
-	padding-top: 30px;
-	padding-left: 50px;
+	padding-top: 50px;
+	padding-left: 100px;
+}
+
+.con4_in .whatch {
+	position: absolute;
+	top: -3px;
+	left: 65px;
+	width: 66px;
+	height: 66px;
+}
+
+#con4 h1 {
+	font-size: 25px;
+	line-height: 40px;
+	color: #00a69d;
+	padding: 5px 0 10px;
+	font-family: 'SCoreDream';
 }
 
 .con4_in h2 {
-	font-size: 25px;
+	font-size: 22px;
 	font-weight: 300;
 	padding-bottom: 30px;
 }
 
 .con4_in .a {
-	color: #bbb;
+	color: #000000;
 	text-decoration: line-through;
 }
 
@@ -641,14 +666,6 @@ h4 {
 .con4_in p {
 	font-size: 17px;
 	padding-bottom: 50px;
-}
-
-.con4_in .whatch {
-	position: absolute;
-	top: -35px;
-	left: 40px;
-	width: 66px;
-	height: 66px;
 }
 
 #con4 .btn a {
@@ -674,6 +691,26 @@ h4 {
 	background-color: #00A69D;
 }
 
+#con4 .stew{
+	position: absolute;
+	top: 300px;
+	right: 430px;
+}
+
+@keyframes stew{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(-5deg);}
+}
+
+.stew{
+	transform-origin: right bottom;
+}
+
+.stew:hover{
+	animation: stew 1s 2 alternate;
+}
+
+
 /* -------------------- video */
 #video {
 	width: 1320px;
@@ -698,6 +735,14 @@ video{
 	padding: 80px 0 0;
 	text-align: center;
 }
+
+#con5 h1 {
+	font-size: 25px;
+	line-height: 40px;
+	color: #00a69d;
+	padding: 5px 0 3px;
+}
+
 
 /* 갤러리 꾸미기 */
 .gallery2 {
@@ -821,7 +866,11 @@ video{
 
 #con6 h1 {
 	text-align: center;
+	font-size: 25px;
+	color: #00a69d;
 }
+
+
 
 .con6_text {
 	width: 246px;
@@ -830,6 +879,7 @@ video{
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
 	padding: 10px;
 	box-sizing: border-box;
+	font-size: 14px;
 }
 
 .con6_text .p1 {
@@ -852,7 +902,7 @@ video{
 	display: -ms-flexbox;
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: 20px;
+	margin-left: 15px;
 }
 
 .con6_text_in p {

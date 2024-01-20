@@ -8,7 +8,7 @@
 body {
 	min-width: 1320px;
 	font-family: 'TmoneyRoundWind';
-	font-size: 14px;
+	font-size: 15px;
 	color: #505050;
 	line-height: 24px;
 	background-color: #fff;
@@ -296,7 +296,7 @@ header img:hover {
 
 
 .filter li a:hover img,
- .filter .active img{
+.filter .active img {
 	opacity: 0;
 }
 
@@ -333,12 +333,13 @@ header img:hover {
 	text-align: center;
 	position: relative;
 }
-.tittle h1{
+
+.tittle h1 {
 	text-align: center;
 	margin-top: 100px;
 }
 
-.tittle h1 .text{
+.tittle h1 .text {
 	color: #00A69D;
 	border: 1px solid #00A69D;
 	padding: 5px 20px 5px 15px;
@@ -377,7 +378,7 @@ select {
 	border: none;
 }
 
-select:hover{
+select:hover {
 	background: url(../images/s_click2.png)no-repeat 95% 50%;
 	background-color: #c3e6e4;
 }
@@ -386,7 +387,7 @@ select::-ms-expand {
 	display: none;
 }
 
-option{
+option {
 	border: none;
 }
 
@@ -396,10 +397,12 @@ option{
 	font-weight: 900;
 }
 
-.filter p{
+.filter_content p {
 	font-family: 'TmoneyRoundWind';
+	font-size: 14px;
 	padding-top: 8px;
 }
+
 
 
 
@@ -408,77 +411,92 @@ option{
 	padding: 20px 0 15px;
 }
 
+
+
+.s_icon p{
+	flex-direction: column;
+}
 .s_icon>li>a>img {
 	padding-right: 10px;
 	display: block;
 }
 
-.s_icon>li>a>img:hover{
+.s_icon>li>a>img:hover {
 	opacity: 0.6;
 }
+
 .s_icon>li>a>.icon_2 {
 	padding-right: 3px;
 }
 
+.s_icon p{
+	padding-top: 3px;
+	font-size: 14px;
+	font-family: 'TmoneyRoundWind';
+}
 
-.shop1{
+
+
+
+
+.shop1 {
 	display: block;
 	overflow: hidden;
 	background: url(../images/s_bg.png) no-repeat;
 }
 
-.shop2{
+.shop2 {
 	display: block;
 	overflow: hidden;
 	background: url(../images/s_bg_best.png) no-repeat;
 }
 
-.shop3{
+.shop3 {
 	display: block;
 	overflow: hidden;
 	background: url(../images/s_bg_new.png) no-repeat;
 }
 
-.shop4{
+.shop4 {
 	display: block;
 	overflow: hidden;
 	background: url(../images/s_bg_sale.png) no-repeat;
 }
 
 
-.shop1 img{
+.shop1 img {
 	display: block;
 	transition: all .5s;
 }
 
-.shop1:hover img{
+.shop1:hover img {
 	transform: scale(1.1, 1.1);
 }
 
-.shop2 img{
+.shop2 img {
 	display: block;
 	transition: all .5s;
 }
 
-.shop2:hover img{
+.shop2:hover img {
 	transform: scale(1.1, 1.1);
 }
 
-.shop3 img{
+.shop3 img {
 	display: block;
 	transition: all .5s;
 }
 
-.shop3:hover img{
+.shop3:hover img {
 	transform: scale(1.1, 1.1);
 }
 
-.shop4 img{
+.shop4 img {
 	display: block;
 	transition: all .5s;
 }
 
-.shop4:hover img{
+.shop4:hover img {
 	transform: scale(1.1, 1.1);
 }
 
