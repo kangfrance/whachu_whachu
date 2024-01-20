@@ -23,11 +23,11 @@
 
     <link href="https://webfontworld.github.io/Poppins/Poppins.css" rel="stylesheet">
 </head>
-<!-- 커서 -->
-<div id="cursor">
-</div>
 
 <body>
+    <!-- 커서 -->
+    <div id="cursor">
+    </div>
     <!-- header -->
     <header>
         <ul>
@@ -55,19 +55,22 @@
     <div id="wrap">
         <!-- sticky -->
         <div class="sticky">
-            <a href="#"><img src="./images/e_sticky.png" alt="사또 고정"></a>
+            <a href="#none"><img src="./images/e_sticky.png" alt="사또 고정"></a>
         </div>
-        
+
         <!-- event -->
         <div id="event">
             <div class="event_in">
-                <h1 data-aos="fade-right">와츄와츄 회원가입 하고</h1>
-                <img src="./images/e_tittle.png" alt="타이틀" data-aos="fade-right">
-                <p data-aos="fade-right">회원가입만 하면 프리미엄 휴먼그레이드 간식이 100원!</p>
+                <h1 data-aos="fade-up">와츄와츄 회원가입 하고</h1>
+                <img src="./images/e_tittle.png" alt="타이틀" data-aos="fade-up">
+                <p data-aos="fade-up">회원가입만 하면 프리미엄 휴먼그레이드 간식이 100원!</p>
                 <ul class="btn">
-                    <li><a href="#none" data-aos="fade-right"data-aos-delay="300">구매하러 가기</a></li>
+                    <li><a href="#none" data-aos="fade-up" data-aos-delay="300">구매하러 가기</a></li>
                 </ul>
-                <img src="./images/e_character.png" alt="캐릭터" class="character" data-aos="fade-right" data-aos-delay="600">
+                <img src="./images/e_character1.png" alt="팥쥐" class="character1" data-aos="fade-right"
+                    data-aos-delay="600">
+                <img src="./images/e_character2.png" alt="콩쥐" class="character2" data-aos="fade-left"
+                    data-aos-delay="600">
                 <img src="./images/e_bg.png" alt="배경" class="bg">
 
                 <div class="banner">
@@ -76,11 +79,11 @@
                     <a href="#none"><img src="./images/e_banner3.png" alt="3만원 이상 구매시 노트 무료 증정"></a>
                     <a href="#none"><img src="./images/e_banner4.png" alt="포토리뷰 이벤트"></a>
                     <a href="#none"><img src="./images/e_banner5.png" alt="크리스마스 이벤트"></a>
-
                 </div>
 
                 <img src="./images/e_gift1.png" alt="이벤트 배경" class="gift1">
-                <img src="./images/e_gift2.png" alt="이벤트 배경 캐릭터" class="gift2">
+                <div class="gift2"><a href="#none"><img src="./images/e_gift3.png" alt="선물 상자에 들어간 사또"></a></div>
+                <img src="./images/e_gift4.png" alt="click me" class="gift4">
             </div>
         </div>
 
@@ -105,14 +108,14 @@
         <!-- caricature -->
         <div id="caricature">
             <div class="caricature_in">
-                <div class="box1">
+                <div class="box1" data-aos="fade-right">
                     <h2>이달의 리뷰 고객</h2>
                     <h3>caricature</h3>
                     <ul class="btn1">
                         <li><a href="#none">참여하러 가기</a></li>
                     </ul>
                 </div>
-                <div class="box2">
+                <div class="box2" data-aos="fade-left" data-aos-delay="300">
                     <img src="./images/e_review1-1.png" alt="12월 우수 리뷰 고객 캐리커쳐1" class="reivew1">
                     <p>12월 우수 리뷰 고객 캐리커쳐</p>
                     <div class="in_btn_right">
@@ -127,7 +130,7 @@
                     </div>
                     <img src="./images/e_toy1.png" alt="당근 장난감" class="toy1">
                 </div>
-                <div class="box3">
+                <div class="box3" data-aos="fade-right" data-aos-delay="600">
                     <img src="./images/e_review1-2.png" alt="11월 우수 리뷰 고객 캐리커쳐1">
                     <p>11월 우수 리뷰 고객 캐리커쳐</p>
                     <div class="in_btn_left">
@@ -142,7 +145,7 @@
                     </div>
                     <img src="./images/e_toy2.png" alt="고기 장난감" class="toy2">
                 </div>
-                <div class="box4">
+                <div class="box4" data-aos="fade-left" data-aos-delay="900">
                     <img src="./images/e_review1-3.png" alt="10월 우수 리뷰 고객 캐리커쳐1">
                     <p>10월 우수 리뷰 고객 캐리커쳐</p>
                     <div class="in_btn_right">
@@ -157,7 +160,7 @@
                     </div>
                     <img src="./images/e_toy3.png" alt="머핀" class="toy3">
                 </div>
-                <div class="box5">
+                <div class="box5" data-aos="fade-right" data-aos-delay="1200">
                     <img src="./images/e_review1-4.png" alt="9월 우수 리뷰 고객 캐리커쳐1">
                     <p>9월 우수 리뷰 고객 캐리커쳐</p>
                     <div class="in_btn_left">
@@ -224,12 +227,14 @@
                 <li class="title">· Account number</li>
                 <li>IBK 기업은행 311-073392-01-012</li>
                 <li>예금주 와츄와츄(주)</li>
-                <ul class="icon">
-                    <li class="icon_1"><a href="#none"><img src="./images/f1-1.png" alt="카카오톡"></a></li>
-                    <li class="icon_2"><a href="#none"><img src="./images/f1-2.png" alt="인스타"></a></li>
-                    <li class="icon_3"><a href="#none"><img src="./images/f1-3.png" alt="페이스북"></a></li>
-                    <li class="icon_4"><a href="#none"><img src="./images/f1-4.png" alt="유튜브"></a></li>
-                </ul>
+                <li>
+                    <ul class="icon">
+                        <li class="icon_1"><a href="#none"><img src="./images/f1-1.png" alt="카카오톡"></a></li>
+                        <li class="icon_2"><a href="#none"><img src="./images/f1-2.png" alt="인스타"></a></li>
+                        <li class="icon_3"><a href="#none"><img src="./images/f1-3.png" alt="페이스북"></a></li>
+                        <li class="icon_4"><a href="#none"><img src="./images/f1-4.png" alt="유튜브"></a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </footer>
