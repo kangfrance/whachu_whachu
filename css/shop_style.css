@@ -404,18 +404,11 @@ option {
 }
 
 
-
-
 .filter_content h3 {
 	font-size: 18px;
 	padding: 20px 0 15px;
 }
 
-
-
-.s_icon p{
-	flex-direction: column;
-}
 .s_icon>li>a>img {
 	padding-right: 10px;
 	display: block;
