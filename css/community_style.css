@@ -211,6 +211,7 @@ header img:hover {
 #event {
 	background-color: #FFF6BA;
 	margin-top: -289px;
+	overflow: hidden;
 }
 
 .event_in {
@@ -322,7 +323,7 @@ opacity: 0;
 .gift4 {
 	position: absolute;
 	bottom:310px;
-	right:-20px;
+	right:20px;
 	z-index: 5;
 	opacity: 1;
 }
@@ -425,7 +426,6 @@ opacity: 0;
 	margin: auto;
 	position: relative;
 	padding: 150px 0;
-	overflow: hidden;
 }
 
 
