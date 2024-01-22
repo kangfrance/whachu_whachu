@@ -221,9 +221,9 @@ header img:hover {
 	position: absolute;
 	top: 10%;
 	left: 50.5%;
-	margin-left: -250px;
+	margin-left: -275px;
 	/* 이미지크기 반으로 해서 마이너스값 중앙정렬 계산법 */
-	width: 500px;
+	width: 550px;
 }
 
 @keyframes logo {

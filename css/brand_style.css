@@ -331,9 +331,10 @@ header img:hover {
 
 .con1_in h1 {
 	line-height: 25px;
-	line-height: 45px;
+	line-height: 40px;
 	padding-bottom: 30px;
 	font-family: 'SCoreDream';
+	font-size: 25px;
 }
 
 .con1_in .p1,

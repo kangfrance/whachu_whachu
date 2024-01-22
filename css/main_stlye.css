@@ -323,6 +323,7 @@ header img:hover {
 	color: #00a69d;
 	padding-bottom: 20px;
 	font-family: 'SCoreDream';
+	font-weight: 500;
 }
 
 #con1 p {
@@ -391,6 +392,7 @@ header img:hover {
 	color: #00a69d;
 	padding: 5px 0 3px;
 	font-family: 'SCoreDream';
+	font-weight: 500;
 }
 
 #con2 h2 {
@@ -636,6 +638,7 @@ h4 {
 	color: #00a69d;
 	padding: 5px 0 10px;
 	font-family: 'SCoreDream';
+	font-weight: 500;
 }
 
 .con4_in h2 {
@@ -645,17 +648,20 @@ h4 {
 }
 
 .con4_in .a {
-	color: #000000;
+	color: #bbb;
 	text-decoration: line-through;
+	padding-right: 3px;
 }
 
 .con4_in .b {
 	font-weight: bold;
+	padding-right: 3px;
 }
 
 .con4_in .c {
 	color: #00A69D;
 	font-weight: bold;
+	padding-right: 5px;
 }
 
 .con4_in .icon {
@@ -722,6 +728,7 @@ video{
 }
 
 /* -------------------- con5 */
+
 #con5 {
 	background-color: #fffce8;
 }
@@ -809,9 +816,12 @@ video{
 }
 
 #con5 h2 {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
+	font-family: 'SCoreDream';
+	font-weight: 600;
+	padding-bottom: 5px;
 }
 
 #con5 p {
