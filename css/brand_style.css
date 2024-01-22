@@ -682,7 +682,7 @@ header img:hover {
 }
 
 .guide p {
-	width: 600px;
+	width: 640px;
 	border-bottom: 2px solid #98d7d4;
 }
 
@@ -717,13 +717,13 @@ header img:hover {
 
 .ch_bg2{
 	position: absolute;
-	top: 480px;
+	top: 467px;
 	left: -50px;
 }
 
 .directions_in video{
 	position: absolute;
-	bottom: -120px;
+	bottom: -100px;
 	left: 80px;
 }
 

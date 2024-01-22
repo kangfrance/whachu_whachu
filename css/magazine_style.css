@@ -377,13 +377,13 @@ header img:hover {
 	color: #00A69D;
 	font-size: 22px;
 	font-weight: 300;
-	padding-top: 130px;
+	padding-top: 110px;
 }
 
 .con2_in .en {
 	color: #aaa;
 	padding-top: 5px;
-	padding-bottom: 120px;
+	padding-bottom: 130px;
 }
 
 .con2_in .text {
@@ -417,27 +417,27 @@ header img:hover {
 
 .con2_in .text_end {
 	position: absolute;
-	top: 680px;
+	top: 671px;
 	right: 320px;
 	color: #aaa;
 }
 
 .con2_in .a {
 	position: absolute;
-	top: 377px;
+	top: 367px;
 	right: 338px;
 	font-weight: 300;
 }
 
 .con2_in .a1 {
 	position: absolute;
-	top: 498px;
+	top: 488px;
 	right: 338px;
 	font-weight: 300;
 }
 .con2_in .a2 {
 	position: absolute;
-	top: 619px;
+	top: 609px;
 	right: 340px;
 	font-weight: 300;
 }
