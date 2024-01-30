@@ -322,8 +322,8 @@ header img:hover {
 	line-height: 40px;
 	color: #00a69d;
 	padding-bottom: 20px;
-	font-family: 'SCoreDream';
-	font-weight: 500;
+	font-family: 'NanumSquareNeo';
+	font-weight: 800;
 }
 
 #con1 p {
@@ -391,8 +391,8 @@ header img:hover {
 	line-height: 40px;
 	color: #00a69d;
 	padding: 5px 0 3px;
-	font-family: 'SCoreDream';
-	font-weight: 500;
+	font-family: 'NanumSquareNeo';
+	font-weight: 800;
 }
 
 #con2 h2 {
@@ -400,11 +400,11 @@ header img:hover {
 	font-weight: 400;
 	color: #505050;
 	font-size: 15px;
-}	
+}
 
 #con2 h3 {
 	padding-bottom: 10px;
-}	
+}
 
 .con2_in {
 	text-align: center;
@@ -442,7 +442,8 @@ header img:hover {
 	filter: opacity(0.6);
 }
 
-.can1, .can2 {
+.can1,
+.can2 {
 	background: url(../images/i_bg.png)no-repeat;
 }
 
@@ -489,10 +490,12 @@ header img:hover {
 #con3 h3 {
 	padding-top: 20px;
 	font-size: 16px;
+		font-family: 'NanumSquareNeo';
+		font-weight: 800;
 }
 
 #con3 p {
-	font-size: 15px;
+	font-size: 14px;
 	padding: 5px;
 }
 
@@ -515,7 +518,7 @@ h4 {
 	font-weight: 300;
 }
 
-.shop1{
+.shop1 {
 	display: block;
 	overflow: hidden;
 	background: url(../images/i_con3_bg.png) no-repeat;
@@ -637,8 +640,8 @@ h4 {
 	line-height: 40px;
 	color: #00a69d;
 	padding: 5px 0 10px;
-	font-family: 'SCoreDream';
-	font-weight: 500;
+	font-family: 'NanumSquareNeo';
+	font-weight: 800;
 }
 
 .con4_in h2 {
@@ -697,22 +700,27 @@ h4 {
 	background-color: #00A69D;
 }
 
-#con4 .stew{
+#con4 .stew {
 	position: absolute;
 	top: 300px;
 	right: 430px;
 }
 
-@keyframes stew{
-	0%{transform: rotate(0deg);}
-	100%{transform: rotate(-5deg);}
+@keyframes stew {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(-5deg);
+	}
 }
 
-.stew{
+.stew {
 	transform-origin: right bottom;
 }
 
-.stew:hover{
+.stew:hover {
 	animation: stew 1s 2 alternate;
 }
 
@@ -723,7 +731,7 @@ h4 {
 	margin: 0 auto 150px;
 }
 
-video{
+video {
 	display: block;
 }
 
@@ -732,10 +740,12 @@ video{
 #con5 {
 	background-color: #fffce8;
 }
-#con5 h2{
-	font-family: 'SCoreDream';
+
+#con5 h2 {
+	font-family: 'NanumSquareNeo';
 	font-weight: 900;
 }
+
 .con5_in {
 	width: 1320px;
 	margin: auto;

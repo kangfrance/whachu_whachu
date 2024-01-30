@@ -232,7 +232,7 @@ header img:hover {
 	font-weight: bold;
 	font-size: 17px;
 	padding: 10px 0 30px;
-	font-family: 'SCoreDream';
+	font-family: 'NanumSquareNeo';
 }
 
 .event_in .btn a {
@@ -302,7 +302,7 @@ header img:hover {
 .gift2 {
 	position: absolute;
 	bottom: 115px;
-	right:60px;
+	right: 60px;
 	z-index: 6;
 }
 
@@ -312,18 +312,18 @@ header img:hover {
 	margin: auto;
 }
 
-.gift2:hover img{
-opacity: 0;
+.gift2:hover img {
+	opacity: 0;
 }
 
-.gift2:hover+.gift4{
+.gift2:hover+.gift4 {
 	opacity: 0;
 }
 
 .gift4 {
 	position: absolute;
-	bottom:310px;
-	right:20px;
+	bottom: 310px;
+	right: 20px;
 	z-index: 5;
 	opacity: 1;
 }
@@ -344,9 +344,10 @@ opacity: 0;
 }
 
 
-.gift{
+.gift {
 	z-index: 99;
 }
+
 /* -------------------- 팝업 */
 .popup {
 	position: fixed;
@@ -475,8 +476,8 @@ opacity: 0;
 	width: 561px;
 }
 
-.box1:hover[data-aos^=fade][data-aos^=fade].aos-animate{
-transform: translateZ(0) rotate(-5deg);
+.box1:hover[data-aos^=fade][data-aos^=fade].aos-animate {
+	transform: translateZ(0) rotate(-5deg);
 }
 
 .box2 {
@@ -484,14 +485,14 @@ transform: translateZ(0) rotate(-5deg);
 	position: absolute;
 	top: 350px;
 	right: 0;
-	padding: 130px 90px 0 150px;
+	padding: 130px 70px 0 150px;
 }
 
 .box2 p {
 	font-size: 20px;
 	font-weight: bold;
 	text-align: end;
-	padding: 30px 0 20px;
+	padding: 30px 0 25px;
 }
 
 .box3 {
@@ -506,15 +507,15 @@ transform: translateZ(0) rotate(-5deg);
 	font-size: 20px;
 	font-weight: bold;
 	text-align: left;
-	padding: 30px 0 20px 0;
+	padding: 50px 0 25px 0;
 }
 
 .box4 {
 	background: url(../images/e_bg3.gif) no-repeat right 60px;
 	position: absolute;
 	bottom: 350px;
-	right: 0;
-	padding: 100px 90px 0 100px;
+	right: 0px;
+	padding: 100px 70px 0 100px;
 }
 
 
@@ -522,7 +523,7 @@ transform: translateZ(0) rotate(-5deg);
 	font-size: 20px;
 	font-weight: bold;
 	text-align: end;
-	padding: 40px 0 20px;
+	padding: 40px 0 25px;
 }
 
 
@@ -540,7 +541,7 @@ transform: translateZ(0) rotate(-5deg);
 	font-size: 20px;
 	font-weight: bold;
 	text-align: left;
-	padding: 30px 0 20px 0;
+	padding: 30px 0 25px 0;
 }
 
 .toy1 {
@@ -607,7 +608,7 @@ transform: translateZ(0) rotate(-5deg);
 }
 
 .toy3 {
-	animation: toy3 1.5s infinite alternate;
+	animation: toy3 1.5s infinite alternate-reverse;
 }
 
 @keyframes toy4 {
@@ -616,7 +617,7 @@ transform: translateZ(0) rotate(-5deg);
 	}
 
 	100% {
-		transform: translateY(10px);
+		transform: translateY(20px);
 	}
 }
 
@@ -636,7 +637,7 @@ transform: translateZ(0) rotate(-5deg);
 .in_btn_right>.in_btn1 a {
 	display: inline-block;
 	position: relative;
-	background-color: #bbdbda;
+	background-color: #d4f3ea;
 	border-radius: 20px;
 	padding: 5px 45px 5px 45px;
 	margin-left: 100px;
@@ -645,7 +646,7 @@ transform: translateZ(0) rotate(-5deg);
 .in_btn_left>.in_btn1 a {
 	display: inline-block;
 	position: relative;
-	background-color: #bbdbda;
+	background-color: #d4f3ea;
 	border-radius: 20px;
 	padding: 5px 45px 5px 45px;
 }
@@ -658,7 +659,7 @@ transform: translateZ(0) rotate(-5deg);
 .in_btn2 a {
 	display: inline-block;
 	position: relative;
-	background-color: #bbdbda;
+	background-color: #d4f3ea;
 	border-radius: 20px;
 	padding: 5px 20px 5px 30px;
 	margin-left: 30px;
@@ -670,51 +671,87 @@ transform: translateZ(0) rotate(-5deg);
 }
 
 
+@keyframes favorite {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(10deg);
+	}
+}
+.favorite {
+	transform-origin: right bottom;
+}
+
+.favorite:hover {
+	animation: favorite 1s 2 alternate;
+}
+
+
+@keyframes good {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(10deg);
+	}
+}
+.good {
+	transform-origin: right bottom;
+}
+
+.good:hover {
+	animation: good 1s 2 alternate;
+}
+
+
 .box2 .good {
 	position: absolute;
-	top: 702px;
+	top: 708px;
 	left: 233px;
 }
 
 .box2 .favorite {
 	position: absolute;
-	top: 699px;
+	top: 703px;
 	left: 400px;
 }
 
 .box3 .good {
 	position: absolute;
-	top: 773px;
+	top: 798px;
 	left: 63px;
 }
 
 .box3 .favorite {
 	position: absolute;
-	top: 770px;
+	top: 793px;
 	left: 230px;
 }
 
 .box4 .good {
 	position: absolute;
-	top: 683px;
-	right: 360px;
+	top: 688px;
+	right: 352px;
 }
 
 .box4 .favorite {
 	position: absolute;
-	top: 680px;
+	top: 683px;
 	left: 348px;
 }
 
 .box5 .good {
 	position: absolute;
-	top: 653px;
+	top: 658px;
 	left: 63px;
 }
 
 .box5 .favorite {
 	position: absolute;
-	top: 649px;
+	top: 654px;
 	left: 228px;
 }
 

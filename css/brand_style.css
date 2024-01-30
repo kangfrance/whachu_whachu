@@ -306,9 +306,10 @@ header img:hover {
 
 
 /* -------------------- brand */
-#con1{
+#con1 {
 	overflow: hidden;
 }
+
 .con1_in {
 	margin: 50px auto;
 	position: relative;
@@ -333,8 +334,9 @@ header img:hover {
 	line-height: 25px;
 	line-height: 40px;
 	padding-bottom: 30px;
-	font-family: 'SCoreDream';
+	font-family: 'NanumSquareNeo';
 	font-size: 25px;
+	font-weight: 800;
 }
 
 .con1_in .p1,
@@ -342,9 +344,10 @@ header img:hover {
 	padding-bottom: 25px;
 }
 
-.text{
+.text {
 	padding-left: 100px;
 }
+
 /* -------------------- con2 */
 .con2_in h2 {
 	color: #00A69D;
@@ -401,8 +404,8 @@ header img:hover {
 .con2_in li h3 {
 	background: url(../images/b_icon_1.png) no-repeat 20% 30px;
 	color: #fff;
-	font-family: 'SCoreDream';
-	font-weight:600;
+	font-family: 'NanumSquareNeo';
+	font-weight: 700;
 	font-size: 17px;
 	padding-top: 40px;
 	line-height: 28px;
@@ -418,21 +421,26 @@ header img:hover {
 	font-size: 14px;
 }
 
-.con2_in li:hover{
+.con2_in li:hover {
 	background: url(../images/b_text_h.png) no-repeat center center;
 }
-.con2_in li h3:hover{
+
+.con2_in li h3:hover {
 	background: url(../images/b_icon_h1.png) no-repeat 20% 30px;
 }
-.con2_in li .a1:hover{
+
+.con2_in li .a1:hover {
 	background: url(../images/b_icon_h2.png) no-repeat 20% 30px;
 }
-.con2_in li .a2:hover{
+
+.con2_in li .a2:hover {
 	background: url(../images/b_icon_h3.png) no-repeat 20% 30px;
 }
-.con2_in li .a3:hover{
+
+.con2_in li .a3:hover {
 	background: url(../images/b_icon_h4.png) no-repeat 20% 30px;
 }
+
 /* --------------------  bi */
 #bi {
 	width: 1089px;
@@ -442,7 +450,8 @@ header img:hover {
 
 #bi h1 {
 	font-size: 22px;
-	font-family: 'SCoreDream';
+	font-family: 'NanumSquareNeo';
+	font-weight: 800;
 }
 
 #bi h2 {
@@ -456,13 +465,13 @@ header img:hover {
 	height: 455px;
 }
 
-.bi_img1{
+.bi_img1 {
 	position: absolute;
 	top: 50px;
 	left: 150px;
 }
 
-.bi_img2{
+.bi_img2 {
 	position: absolute;
 	top: 50px;
 	right: 150px;
@@ -477,8 +486,9 @@ header img:hover {
 	justify-content: space-between;
 	padding: 390px 80px;
 }
-.bi_in2_color{
-	padding:0 60px 0 10px;
+
+.bi_in2_color {
+	padding: 0 60px 0 10px;
 }
 
 
@@ -603,12 +613,12 @@ header img:hover {
 	width: 295px;
 }
 
-.favorite{
-	font-family: 'SCoreDream';
-	font-weight: 700;
+.favorite {
+	font-family: 'NanumSquareNeo';
+	font-weight: 800;
 }
 
-.character{
+.character {
 	z-index: 99;
 }
 
@@ -656,7 +666,8 @@ header img:hover {
 	color: #00A69D;
 	padding-left: 41.3px;
 }
-.directions_in .c{
+
+.directions_in .c {
 	padding-left: 5px;
 }
 
@@ -715,23 +726,23 @@ header img:hover {
 	padding-top: 30px;
 }
 
-.ch_bg2{
+.ch_bg2 {
 	position: absolute;
 	top: 467px;
 	left: -50px;
 }
 
-.directions_in video{
+.directions_in video {
 	position: absolute;
 	bottom: -100px;
 	left: 80px;
 }
 
 
-.map{
-position: absolute;
-top: 60px;
-right: 20px;
+.map {
+	position: absolute;
+	top: 60px;
+	right: 20px;
 }
 
 /* -------------------- footer top */
